@@ -11,3 +11,19 @@ questions = [
     ["Which ocean is the largest?", "Indian Ocean", "Pacific Ocean", "Atlantic Ocean", "Arctic Ocean", 2],
     ["What is the smallest country in the world?", "San Marino", "Vatican City", "Monaco", "Liechtenstein", 2]
 ]
+
+for question in questions:
+    print(f"Question: {question[0]}")
+    print(f"1. {question[1]}")
+    print(f"2. {question[2]}")
+    print(f"3. {question[3]}")
+    print(f"4. {question[4]}")
+    answer = int(input("Please enter the letter of your answer: "))
+
+    if answer == question[5]:
+        print("Correct!\n")
+    else:
+        print(f"Wrong! The correct answer is {question[5]}.\n")
+        print("Game Over!")
+        break    
+    
