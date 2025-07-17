@@ -12,6 +12,9 @@ questions = [
     ["What is the smallest country in the world?", "San Marino", "Vatican City", "Monaco", "Liechtenstein", 2]
 ]
 
+prizes = [100000, 320000, 400000, 450000,  500000, 1000000, 2000000, 3000000, 4000000, 5000000, 6000000]
+
+i = 0 
 for question in questions:
     print(f"Question: {question[0]}")
     print(f"1. {question[1]}")
@@ -25,5 +28,8 @@ for question in questions:
     else:
         print(f"Wrong! The correct answer is {question[5]}.\n")
         print("Game Over!")
-        break    
+        break  
+
+    print(f"You won {prizes[i]}")
+    i +=1  
     
